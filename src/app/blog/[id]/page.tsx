@@ -23,8 +23,9 @@ interface Post {
     jetpack_featured_media_url: string;
 }
 
-const Blog = ({ params }: { params: BlogParams }) => {
-    const { id } = React.use(params);
+const Blog = ({ params: paramsPromise }: { params: Promise<BlogParams> }) => {
+    const params = React.use(paramsPromise);
+    const { id } = params;
 
     // Initialize post
     const [post, setPost] = useState<Post>({
