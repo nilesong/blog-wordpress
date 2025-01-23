@@ -2,6 +2,8 @@ This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-
 
 ## Blog website with Wordpress Backend API
 
+https://blog-wordpress-api.vercel.app/
+
 1. Fetch and display Blog post list
     The following are displayed in the blog list:
     - Title
