@@ -24,12 +24,6 @@ interface Post {
   date: string;
 }
 
-// Type definition: searchBar
-interface SearchBarProps {
-  searchQuery: string;
-  setSearchQuery: (query: string) => void;
-}
-
 function Index() {
   // States
   const [posts, setPosts] = useState<Post[]>([]);
